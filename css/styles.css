@@ -34,5 +34,10 @@
 #player1-total {
   font-size: 150px;
   font-family: fantasy;
-  color: #ee33rr;
+  color: #77ee99;
+}
+#player2-total {
+  font-size: 150px;
+  font-family: fantasy;
+  color: #77ee99;
 }

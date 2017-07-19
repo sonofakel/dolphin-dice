@@ -11,7 +11,7 @@ This is our Pig Dice Project that will allow the user to play Pig Dice which is 
 |Display the cycle total under "point total"   |  2,3    |   2,3   |
 |2. If the random number is not equal to one, then the user may roll again. | click roll button again   | 3, now the total = 7   |
 |3. When the user rolls two or more numbers in a row that are not equal to 1, the numbers rolled are added together.  |   2  |  total = 9  |
-|If players hit one on the first turn  |     |     |
+|If players hit one on the first turn the cycle result goes to zero |   1  |  0   |
 |6.   |     |     |
 |7.   |     |     |
 |8.   |     |     |
