@@ -25,3 +25,8 @@
 .dolph-hold {
   font-size: 40px;
 }
+#curr-roll {
+  font-size: 150px;
+  font-family: fantasy;
+  color: #11DD99;
+}
