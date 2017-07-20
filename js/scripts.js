@@ -21,7 +21,7 @@ Game.prototype.switchPlayer = function() {
 }
 Game.prototype.roll = function() {
   var diceRoll = Math.floor(Math.random() * 6) + 1;
-  if (diceRoll == 1) {
+  if (diceRoll === 1) {
     this.roundTotal = 0;
     this.switchPlayer();
   } else {
@@ -41,17 +41,36 @@ var currentGame = new Game();
 //Front-end logic
 $(function(){
 
+
   $(".dolph-roll").click(function(event){
     $("#curr-roll").text(currentGame.roll());
     $("#player1-cycle-total").text(currentGame.roundTotal);
     $("#player2-cycle-total").text(currentGame.roundTotal);
+
+    if (currentGame.currentPlayer === currentGame.player2) {
+    $(".play-2").css("color","green")
+    $(".play-1").css("color","red")
+  } else {
+    $(".play-1").css("color","green")
+    $(".play-2").css("color","red")
+  }
+
   })
 
   $(".dolph-hold").click(function(event){
     currentGame.hold();
     $("#player1-total").text(currentGame.player1.score);
     $("#player2-total").text(currentGame.player2.score);
+
+    if (currentGame.currentPlayer === currentGame.player2) {
+    $(".play-2").css("color","green")
+    $(".play-1").css("color","red")
+  } else {
+    $(".play-1").css("color","green")
+    $(".play-2").css("color","red")
+  }
   });
+
 });
 
 // if (random === 1) {
